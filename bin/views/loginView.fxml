@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.loginViewController">
+   <children>
+      <AnchorPane maxHeight="300.0" maxWidth="400.0" style="-fx-background-color: #ffffff;" StackPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Login" textAlignment="CENTER" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="Aharoni Bold" size="44.0" />
+               </font>
+            </Label>
+            <VBox alignment="TOP_CENTER" fillWidth="false" spacing="20.0" stylesheets="@buttonStyle.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <TextField fx:id="username" prefWidth="200.0" promptText="Enter Username" />
+                  <PasswordField fx:id="password" prefWidth="200.0" promptText="Enter Password" />
+                  <Button fx:id="loginButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="200.0" minHeight="-Infinity" minWidth="200.0" mnemonicParsing="false" onAction="#onLogin" prefWidth="200.0" stylesheets="@buttonStyle.css" text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="21.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="newUser" opacity="0.7" text="New user" textAlignment="CENTER" textFill="#fc0303" underline="true">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

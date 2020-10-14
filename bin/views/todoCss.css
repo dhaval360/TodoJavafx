@@ -1,0 +1,13 @@
+.vbox{
+	-fx-background-color : 	#006c00;
+}
+.vbox-button{
+	-fx-background-color : 	#006c00;
+}
+
+.vbox-button:hover{
+	-fx-background-color : 	#006c00;
+}
+.vbox-button:pressed{
+	-fx-background-color : 	#006c00;
+}

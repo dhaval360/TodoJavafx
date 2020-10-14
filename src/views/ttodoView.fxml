@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="500.0">
+         <children>
+            <GridPane AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="341.0" minWidth="10.0" prefWidth="341.0" />
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="235.0" minWidth="10.0" prefWidth="139.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints />
+                  <RowConstraints minHeight="10.0" />
+                <RowConstraints />
+                  <RowConstraints minHeight="10.0" />
+                <RowConstraints />
+                  <RowConstraints minHeight="10.0" />
+              </rowConstraints>
+               <children>
+                  <Label text="Today" />
+                  <Label text="Tommorow" GridPane.rowIndex="2" />
+                  <Label text="Upcoming" GridPane.rowIndex="4" />
+                  <Button mnemonicParsing="false" text="add" GridPane.columnIndex="1" />
+                  <Button mnemonicParsing="false" text="add" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" text="add" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <ScrollPane style="-fx-border-color: #ffffff;" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+                     <content>
+                        <ListView prefWidth="400.0" />
+                     </content>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </ScrollPane>
+                  <ScrollPane style="-fx-border-color: #ffffff;" GridPane.columnSpan="2147483647" GridPane.rowIndex="3">
+                     <content>
+                        <ListView prefWidth="400.0" />
+                     </content>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </ScrollPane>
+                  <ScrollPane style="-fx-border-color: #ffffff;" GridPane.columnSpan="2147483647" GridPane.rowIndex="5">
+                     <content>
+                        <ListView prefWidth="400.0" />
+                     </content>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </ScrollPane>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
